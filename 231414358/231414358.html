@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>231414358 • Portfolio & Interests</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top bar with theme toggle -->
+  <header class="site">
+    <div class="inner">
+      <div class="brand">Sduduzo Buthelezi • 231414358</div>
+      <div class="actions">
+        <a class="btn link-btn" href="project.html">Project: Vendorlution</a>
+        <button id="themeBtn" class="btn">Toggle Theme</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <main class="panel">
+      <section class="grid profile">
+        <figure class="card" style="padding:0.9rem">
+          <img class="profile" src="images/sduduzo.jpg" alt="My profile photo" />
+        </figure>
+
+        <div class="card">
+          <h1 style="margin:.2rem 0 .4rem">Hi, I'm Sduduzo — aspiring full-stack engineer</h1>
+          <p>
+            I’m passionate about building web apps where <b>design</b>, <b>security</b>, and <b>reliability</b> meet.
+            Outside code, I make music, design graphics, and tinker with hobby game dev projects.
+          </p>
+
+          <hr class="sep" />
+
+          <div class="hstack">
+            <span class="tag">Full-stack</span>
+            <span class="tag">Security</span>
+            <span class="tag">UI/UX</span>
+            <span class="tag">Hobby Game Dev</span>
+            <span class="tag">Music & Graphic Design</span>
+          </div>
+        </div>
+      </section>
+
+      <hr class="sep" />
+
+      <!-- Hobbies + Spotify -->
+      <section class="grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="card">
+          <h2>Music & Graphic Design</h2>
+          <p>
+            I compose/produce music and love crafting visuals — cover art, simple logos, and social graphics.
+          </p>
+          <div class="pill-links">
+            <a class="link-btn btn" href="https://open.spotify.com/artist/4qh36tkmKcy9OdYslaY9G2?si=MGQwLAnMRbiuWy-wkoQieQ" target="_blank" rel="noopener">My Spotify</a>
+            <a class="link-btn btn" href="https://www.behance.net/" target="_blank" rel="noopener">Behance</a>
+            <a class="link-btn btn" href="https://www.adobe.com/creativecloud.html" target="_blank" rel="noopener">Adobe CC</a>
+          </div>
+
+          <details>
+            <summary>What tools do I use?</summary>
+            <p class="muted">
+              <b>FL Studio</b> for production, <b>Adobe After Effects</b> & <b>Premiere Pro</b> for motion/video,
+              <b>DaVinci Resolve</b> for color & edits, plus Adobe (Ps/Ai) for artwork.
+            </p>
+          </details>
+
+          <h3 style="margin-top:1rem">My Favourite Sound</h3>
+          <p class="muted">Autoplay is attempted; click the button if your browser blocks it.</p>
+          <audio id="favAudio" src="audio/Still A Star(Freestyle).wav" controls autoplay preload="auto" playsinline></audio>
+          <div class="hstack" style="margin-top:.5rem">
+            <button id="forcePlay" class="btn">▶ Play sound</button>
+            <span id="autoNote" class="muted" style="display:none;">Autoplay blocked — tap “Play sound”.</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Hobby Game Dev</h2>
+          <p>
+            I prototype small gameplay ideas to sharpen my systems thinking and polish. Nothing published yet — just for fun!
+          </p>
+          <div class="pill-links">
+            <a class="link-btn btn" href="https://unity.com/" target="_blank" rel="noopener">Unity</a>
+            <a class="link-btn btn" href="https://godotengine.org/" target="_blank" rel="noopener">Godot</a>
+            <a class="link-btn btn" href="https://www.blender.org/" target="_blank" rel="noopener">Blender 3D</a>
+            <a class="link-btn btn" href="https://itch.io/" target="_blank" rel="noopener">itch.io</a>
+          </div>
+          <details>
+            <summary>What I’m exploring now</summary>
+            <p class="muted">
+              Camera feel, input buffering, simple state machines for player actions, and basic 3D asset workflows in Blender.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <hr class="sep" />
+
+      <!-- Professional links & learning resources -->
+      <section class="card">
+        <h2>Professional Links & Learning</h2>
+        <p class="muted">Channels and websites I follow across engineering, design, music, and game dev.</p>
+        <div class="pill-links" style="margin-top:.6rem">
+          <a href="https://www.linkedin.com/in/sduduzo-buthelezi-160957203/" class="link-btn btn" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/sdu4358" class="link-btn btn" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.credly.com/users/sduduzo-buthelezi" class="link-btn btn" target="_blank" rel="noopener">Credly</a>
+          <a href="https://developer.mozilla.org/" class="link-btn btn" target="_blank" rel="noopener">MDN Web Docs</a>
+          <a href="https://www.youtube.com/@Fireship" class="link-btn btn" target="_blank" rel="noopener">Fireship (YT)</a>
+          <a href="https://www.youtube.com/@freecodecamp" class="link-btn btn" target="_blank" rel="noopener">freeCodeCamp (YT)</a>
+          <a href="https://www.smashingmagazine.com/" class="link-btn btn" target="_blank" rel="noopener">Smashing Magazine</a>
+          <a href="https://www.youtube.com/@Mixwiththemasters" class="link-btn btn" target="_blank" rel="noopener">Mix With The Masters (YT)</a>
+          <a href="https://www.youtube.com/@DesignCourse" class="link-btn btn" target="_blank" rel="noopener">DesignCourse (YT)</a>
+        </div>
+      </section>
+
+      <section class="card" style="margin-top:1rem;">
+        <h2>Programming Languages I’ve worked with</h2>
+        <div class="hstack" style="margin-top:.4rem; flex-wrap: wrap;">
+          <span class="tag">Python</span>
+          <span class="tag">JavaScript / TypeScript</span>
+          <span class="tag">Java</span>
+          <span class="tag">C++</span>
+          <span class="tag">SQL (PostgreSQL)</span>
+          <span class="tag">HTML & CSS</span>
+          <span class="tag">PHP (basics)</span>
+        </div>
+        <p class="muted" style="margin-top:.6rem;">
+          I enjoy web backends with Django REST, modern frontends (Vite + React + TS), and hands-on problem solving.
+        </p>
+      </section>
+
+      <hr class="sep" />
+
+      <section class="hstack">
+        <a class="btn primary" href="project.html">Go to our project page →</a>
+        <span class="muted">© 2025 • Student 231414358</span>
+      </section>
+    </main>
+  </div>
+
+  <button id="toTop" class="btn">↑ Top</button>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById('themeBtn');
+    themeBtn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('light');
+      localStorage.setItem('themeLight', document.documentElement.classList.contains('light'));
+    });
+    // Persist theme
+    if (localStorage.getItem('themeLight') === 'true') {
+      document.documentElement.classList.add('light');
+    }
+
+    // Attempt autoplay with graceful fallback
+    const audio = document.getElementById('favAudio');
+    const forcePlay = document.getElementById('forcePlay');
+    const autoNote = document.getElementById('autoNote');
+    function tryAuto() {
+      if (!audio) return;
+      const p = audio.play();
+      if (p && typeof p.then === 'function') {
+        p.then(() => { /* autoplay succeeded */ })
+         .catch(() => { autoNote.style.display = 'inline'; });
+      }
+    }
+    tryAuto();
+    forcePlay.addEventListener('click', () => {
+      audio.play().catch(() => {});
+      autoNote.style.display = 'none';
+    });
+
+    // Scroll-to-top
+    const toTop = document.getElementById('toTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 200) toTop.classList.add('show'); else toTop.classList.remove('show');
+    });
+    toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
+</body>
+</html>

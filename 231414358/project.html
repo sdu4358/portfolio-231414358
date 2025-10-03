@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vendorlution Project • 231414358</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site">
+    <div class="inner">
+      <div class="brand">Vendorlution — P2P Escrow Marketplace</div>
+      <div class="actions">
+        <a class="btn link-btn" href="231414358.html">← Back to homepage</a>
+        <button id="themeBtn" class="btn">Toggle Theme</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <main class="panel">
+      <header class="card">
+        <h1 style="margin:.2rem 0 .4rem">Secure student marketplace</h1>
+        <p class="muted">Funds are held in escrow until the buyer confirms receipt, reducing scams and improving trust.</p>
+        <div class="hstack" style="margin-top:.6rem">
+          <span class="tag">Escrow</span>
+          <span class="tag">Verification</span>
+          <span class="tag">Chat</span>
+          <span class="tag">Disputes</span>
+        </div>
+      </header>
+
+      <section class="grid" style="grid-template-columns: 1.2fr .8fr;">
+        <div class="card">
+          <h2>Project Summary</h2>
+          <p>
+            Vendorlution is a student-friendly marketplace inspired by social platforms but focused on safety.
+            Buyers pay into an escrow wallet; sellers receive funds only after the buyer confirms delivery.
+            The platform supports ID verification, buyer–seller chat, listings, and a transparent dispute flow.
+          </p>
+
+          <details>
+            <summary>Why escrow matters</summary>
+            <p class="muted">
+              It prevents instant payouts to sellers and ensures items are delivered as described before releasing funds.
+            </p>
+          </details>
+        </div>
+
+        <div class="card">
+          <h2>Quick Links</h2>
+          <div class="pill-links">
+            <div class="pill-links">
+            <a class="btn link-btn" href="https://github.com/RKSiweya77/Corporate-Chaos" target="_blank" rel="noopener">
+              GitHub Repo: Corporate-Chaos
+            </a>
+          </div>
+          </div>
+         
+        </div>
+      </section>
+
+      <section class="grid" style="grid-template-columns: 1fr 1fr 1fr;">
+        <div class="card">
+          <h3>Objectives</h3>
+          <ul>
+            <li>Provide secure, escrow-based payments for peer-to-peer trades.</li>
+            <li>Streamline listing discovery and messaging.</li>
+            <li>Establish trust via verification, ratings, and clear dispute resolution.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Key Features</h3>
+          <ul>
+            <li>Escrow wallet: hold-until-confirmation payouts.</li>
+            <li>Verified profiles and listing moderation.</li>
+            <li>In-app chat, order tracking, and receipts.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Non-Goals (MVP)</h3>
+          <ul>
+            <li>No built-in logistics network (buyers/sellers arrange shipping).</li>
+            <li>No auctions; fixed-price listings for simplicity.</li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="sep" />
+
+      <section class="card">
+        <h2>Team Members</h2>
+        <table class="table">
+          <thead>
+            <tr><th>#</th><th>Name</th><th>Student No.</th><th>Role</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Nonopha Blaweni</td><td>230778844</td><td>Tester & Project Manager</td></tr>
+            <tr><td>2</td><td>Thabiso Mkhonto</td><td>230671322</td><td>Frontend Developer</td></tr>
+            <tr><td>3</td><td>Risana Kelly Siweya</td><td>230381898</td><td>Designer & Frontend Developer</td></tr>
+            <tr><td>4</td><td>Sduduzo Buthelezi</td><td>231414358</td><td>Backend Developer</td></tr>
+            <tr><td>5</td><td>Jabu Sithole</td><td>231154119</td><td>Research & Security Analyst</td></tr>
+            <tr><td>6</td><td>Aphiwe Sibusiso Mntambo</td><td>230750710</td><td>Backend & DevOps</td></tr>
+          </tbody>
+        </table>
+       
+      </section>
+
+      <section class="grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="card">
+          <h2>Roadmap</h2>
+          <details open>
+            <summary>Milestone 1 — Listings & Profiles</summary>
+            <p class="muted">Create, edit, and browse listings; basic profile pages; seed data.</p>
+          </details>
+          <details>
+            <summary>Milestone 2 — Escrow & Orders</summary>
+            <p class="muted">Wallet top-ups, hold-funds on order, buyer confirmation, admin release.</p>
+          </details>
+          <details>
+            <summary>Milestone 3 — Chat & Disputes</summary>
+            <p class="muted">In-app messaging, dispute ticketing, resolution workflow.</p>
+          </details>
+        </div>
+
+        <div class="card">
+          <h2>Tech Stack (Planned)</h2>
+          <ul>
+            <li>Frontend: React (Vite + TS), Tailwind</li>
+            <li>Backend: Django REST + PostgreSQL</li>
+            <li>Infra: Docker (dev), CI for deployments</li>
+          </ul>
+          
+        </div>
+      </section>
+
+      <hr class="sep" />
+      <a class="btn link-btn" href="231414358.html">← Back to homepage</a>
+    </main>
+  </div>
+
+  <button id="toTop" class="btn">↑ Top</button>
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById('themeBtn');
+    themeBtn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('light');
+      localStorage.setItem('themeLight', document.documentElement.classList.contains('light'));
+    });
+    if (localStorage.getItem('themeLight') === 'true') {
+      document.documentElement.classList.add('light');
+    }
+    // Scroll-to-top
+    const toTop = document.getElementById('toTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 200) toTop.classList.add('show'); else toTop.classList.remove('show');
+    });
+    toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
+</body>
+</html>
